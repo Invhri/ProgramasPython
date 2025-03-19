@@ -1,104 +1,67 @@
-/* styles.css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Videojuegos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza con tu archivo CSS -->
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
-}
+    <!-- Cabecera de la página -->
+    <header>
+        <div class="logo">
+            <h1>Mi Catálogo de Videojuegos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background-color: #333;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <!-- Filtro de búsqueda (opcional) -->
+    <section class="search-bar">
+        <input type="text" id="search" placeholder="Buscar un videojuego...">
+    </section>
 
-header h1 {
-    font-size: 24px;
-    color: #fff;
-}
+    <!-- Sección de Videojuegos -->
+    <section class="catalog">
+        <div class="game-card">
+            <img src="juego1.jpg" alt="Juego 1">
+            <h3>Juego 1</h3>
+            <p>Descripción del videojuego 1.</p>
+            <button>Ver detalles</button>
+        </div>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+        <div class="game-card">
+            <img src="juego2.jpg" alt="Juego 2">
+            <h3>Juego 2</h3>
+            <p>Descripción del videojuego 2.</p>
+            <button>Ver detalles</button>
+        </div>
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
+        <div class="game-card">
+            <img src="juego3.jpg" alt="Juego 3">
+            <h3>Juego 3</h3>
+            <p>Descripción del videojuego 3.</p>
+            <button>Ver detalles</button>
+        </div>
 
-.search-bar {
-    padding: 20px;
-    text-align: center;
-}
+        <!-- Agrega más tarjetas de videojuegos aquí -->
+    </section>
 
-.search-bar input {
-    padding: 10px;
-    width: 80%;
-    font-size: 18px;
-    border-radius: 5px;
-    border: none;
-    background-color: #333;
-    color: white;
-}
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Mi Catálogo de Videojuegos</p>
+    </footer>
 
-.catalog {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
+    <script src="script.js"></script> <!-- Archivo JavaScript si es necesario -->
+</body>
+</html>
 
-.game-card {
-    background-color: #1f1f1f;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    padding: 15px;
-    transition: transform 0.3s;
-}
-
-.game-card:hover {
-    transform: scale(1.05);
-}
-
-.game-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.game-card h3 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.game-card p {
-    font-size: 14px;
-    color: #bbb;
-}
-
-.game-card button {
-    background-color: #ff6347;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-footer {
-    background-color: #333;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
